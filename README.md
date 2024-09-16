@@ -3,7 +3,7 @@
 
 
 ## Dataset
-Dataset is Now available on kaggle.!
+Dataset is now available on kaggle.!
 
 Download the [BD3-Dataset](https://www.kaggle.com/datasets/praveenkottariisc/b3d-building-defect-detection-dataset).
 
