@@ -44,6 +44,7 @@ The defect classes were carefully selected to improve structural management of b
 * Spalling [500]: Surface break exposing inner material.
 * Stain [521]: Visible man-made or natural color marks.
 * Normal [600]: Clean walls with no visible signs of the above defects.
+* 
 To improve generalization by providing a broader range of examples, various augmentation techniques were applied to the original dataset of 3,965 images. This process generated 2,000 variants for each of the seven classes, resulting in a total of 14,000 augmented samples. The augmentation involved geometric transformations such as rotations, vertical and horizontal flips, as well as color space adjustments like modifying brightness, contrast, saturation, and hue.
 ## Preprocessing and Model Training
 
