@@ -5,7 +5,7 @@
 ## Dataset
 Dataset is now available on kaggle.!
 
-Download the [BD3-Dataset](https://www.kaggle.com/datasets/praveenkottariisc/b3d-building-defect-detection-dataset).
+Download the [BD3-Dataset](https://indianinstituteofscience-my.sharepoint.com/:f:/g/personal/praveenkotta_iisc_ac_in/Eiqt1Ar2wS9Cr3yKDembK9YBIes7nnez_RXMb_RE_kwj0Q?e=YrhMfK).
 
 The released dataset comes in two versions: the original captured and preprocessed dataset consisting of 3,965 raw samples, and an augmented version derived from the original data. All image samples have a resolution of 512x512. The entire data collection and annotation process required approximately 200 man-hours.
 
