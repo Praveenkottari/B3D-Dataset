@@ -208,18 +208,9 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
     │   ├── train-test-split         # Data split code
     │   ├── model-train              # Model training and evaluation code
     │   └── Results                  # Results analysis
-    └── example-imgs                 # Dataset files
+    └── example-imgs                 # Dataset image sample files
+        ├── cls00_441.jpg
         ├── ...
 
 ## Citation
 TODO...
-
-## Deep Learnign models
-
-| 	model	 | 	architecture	 | 	document	 | 
-| 	:-----:	 | 	:-----:	 | 	:-----:	 | 
-| 	ViT16	| 	Transformer	| 	[paper](https://arxiv.org/abs/2010.11929)	 | 
-| 	VGG16 	| 	CNN	| 	[paper](https://arxiv.org/abs/1409.1556)	 | 
-| 	ResNet18	| 	CNN	| 	 | 
-| 	Alexnet	| 	CNN	| 	[paper](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)	 | 
-| 	MobileNet-V2	| 	CNN	| 	[paper](MobileNet-V2)	 | 
