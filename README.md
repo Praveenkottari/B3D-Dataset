@@ -201,9 +201,13 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
 </table>
 
 ## Confusion matrix
-![image](example-imgs/report_images/org-vt-confu.png)
-![image](example-imgs/report_images/aug-vt-confu.png
-)
+
+<p align="center">
+    <img src="example-imgs/report_images/org-vt-confu.png" alt="Original Confusion Matrix" width="500" style="margin-right: 50px;"/>
+    <img src="example-imgs/report_images/aug-vt-confu.png" alt="Augmented Confusion Matrix" width="500" style="margin-left: 50px;"/>
+</p>
+<p align="center"><i>Figure: Vision Transformer model confusion matrices on Original and Augmented dataset.</i></p>
+
 # Code
 
 - **[Data Pre-processing](code/data-process)** - This folder contains Python scripts for renaming images, resizing, and other preprocessing functions. 
