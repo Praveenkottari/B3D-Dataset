@@ -66,7 +66,7 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
   </thead>
   <tbody>
     <tr>
-      <td><a href='https://pytorch.org/vision/stable/models/resnext.html'>ResNet18</a></td>
+      <td><a href='https://pytorch.org/vision/stable/models/resnet.html'>ResNet18</a></td>
       <td>0.8320</td>
       <td>0.8308</td>
       <td>0.8301</td>
@@ -75,7 +75,7 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
       <td>0.9711</td>
     </tr>
     <tr>
-      <td>VGG16</td>
+      <td><a href='https://pytorch.org/vision/stable/models/vgg.html'>VGG16</a></td>
       <td>0.8409</td>
       <td>0.8359</td>
       <td>0.8363</td>
@@ -84,7 +84,7 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
       <td>0.9056</td>
     </tr>
     <tr>
-      <td>MobileNetV2</td>
+      <td><a href='https://pytorch.org/vision/stable/models/mobilenetv2.html'>MobileNetV2</a></td>
       <td>0.8479</td>
       <td>0.8422</td>
       <td>0.8419</td>
@@ -93,7 +93,7 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
       <td>0.8746</td>
     </tr>
     <tr>
-      <td>AlexNet</td>
+      <td><a href='https://pytorch.org/vision/stable/models/alexnet.html'>AlexNet</a></td>
       <td>0.8842</td>
       <td>0.8801</td>
       <td>0.8803</td>
@@ -102,7 +102,7 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
       <td>0.9391</td>
     </tr>
     <tr>
-      <td>ViTpatch16</td>
+      <td><a href='https://pytorch.org/vision/stable/models/vision_transformer.html'>ViTpatch16</a></td>
       <td><b>0.9342</b></td>
       <td><b>0.9318</b></td>
       <td><b>0.9323</b></td>
