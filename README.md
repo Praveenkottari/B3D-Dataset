@@ -43,6 +43,12 @@ The BD3 dataset contains six defect classes and normal wall images. Below are th
 </table>
 
 
+## Dataset preparation
+
+The image dataset collection began by inspecting and identifying building structures that were in a maintained condition. More than 50 buildings, constructed at different times and with ages ranging from 10 to 60 years, were visited. For image capture, we used a smartphone with a high-resolution camera, and all samples were taken approximately 1 meter away from the walls. The images were collected both indoors and outdoors across various campus buildings, which had different material surfaces such as concrete and stone. Afterward, the collected data were assembled for preprocessing and cleaning. Annotation was then performed with respect to the specific defect classes, generating the final dataset.
+![image](example-imgs/report_images/flow-chart3.png)
+
+
 ## Benchmarking
 
 To assess the utility and practical usefulness of the BD3 dataset, we benchmarked five deep learning-based image classifiers: Vision Transformers (ViT), VGG16, ResNet18, AlexNet, and MobileNetV2. These models are implemented using pre-trained [`torchvision.models`](https://pytorch.org/vision/stable/models.html). The training, validation and test splits are: 60%, 20% and 20%.
