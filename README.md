@@ -216,7 +216,7 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
 - **[Model Training and Evaluation](code/model-train)** - Scripts for training and evaluation of different deep learning models.
 - **[Result Analysis](code/results)** - Python scripts to analyze and visualize the results.
 
-## Directure structure
+## Directory structure
     .
     ├── code                         # All Python codes
     │   ├── data-process             # Data pre-processing code
