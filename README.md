@@ -46,7 +46,12 @@ The BD3 dataset contains six defect classes and normal wall images. Below are th
 ## Dataset preparation
 
 The image dataset collection began by inspecting and identifying building structures that were in a maintained condition. More than 50 buildings, constructed at different times and with ages ranging from 10 to 60 years, were visited. For image capture, we used a smartphone with a high-resolution camera, and all samples were taken approximately 1 meter away from the walls. The images were collected both indoors and outdoors across various campus buildings, which had different material surfaces such as concrete and stone. Afterward, the collected data were assembled for preprocessing and cleaning. Annotation was then performed with respect to the specific defect classes, generating the final dataset.
-![image](example-imgs/report_images/flow-chart3.png)
+
+
+![Flowchart](example-imgs/report_images/flow-chart3.png)
+
+<p align="center"><i>Figure : Dataset preparation work-flow</i></p>
+
 
 
 ## Benchmarking
@@ -196,8 +201,9 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
 </table>
 
 ## Confusion matrix
-![image](https://github.com/user-attachments/assets/320522de-6258-49a9-a688-b7e45e2b1f9f)
-
+![image](example-imgs/report_images/org-vt-confu.png)
+![image](example-imgs/report_images/aug-vt-confu.png
+)
 # Code
 
 - **[Data Pre-processing](code/data-process)** - This folder contains Python scripts for renaming images, resizing, and other preprocessing functions. 
