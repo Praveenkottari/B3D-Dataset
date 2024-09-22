@@ -1,0 +1,5 @@
+python => 3.8
+matplotlib==3.7.1
+torch==1.13.1
+torchvision==0.4.2
+CUDA 11.8
