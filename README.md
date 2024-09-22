@@ -43,32 +43,176 @@ The BD3 dataset contains six defect classes and normal wall images. Below are th
 </table>
 
 
+## Benchmarking
 
-## Dataset folder structure
+To assess the utility and practical usefulness of the BD3 dataset, we benchmarked five deep learning-based image classifiers: Vision Transformers (ViT), VGG16, ResNet18, AlexNet, and MobileNetV2. These models are implemented using pre-trained [`torchvision.models`](https://pytorch.org/vision/stable/models.html). The training, validation and test splits are: 60%, 20% and 20%.
+
+<table border="1" cellspacing="0" cellpadding="5">  
+  <caption><b>Comparison of model performance on the original and augmented datasets.</b></caption>  
+  <thead>
+    <tr>
+      <th rowspan="2">Model</th>
+      <th colspan="3">Original dataset</th>
+      <th colspan="3">Augmented dataset</th>
+    </tr>
+    <tr>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-score</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href='https://pytorch.org/vision/stable/models/resnext.html'>ResNet18</a></td>
+      <td>0.8320</td>
+      <td>0.8308</td>
+      <td>0.8301</td>
+      <td>0.9915</td>
+      <td>0.9516</td>
+      <td>0.9711</td>
+    </tr>
+    <tr>
+      <td>VGG16</td>
+      <td>0.8409</td>
+      <td>0.8359</td>
+      <td>0.8363</td>
+      <td>0.9066</td>
+      <td>0.9057</td>
+      <td>0.9056</td>
+    </tr>
+    <tr>
+      <td>MobileNetV2</td>
+      <td>0.8479</td>
+      <td>0.8422</td>
+      <td>0.8419</td>
+      <td>0.8756</td>
+      <td>0.8750</td>
+      <td>0.8746</td>
+    </tr>
+    <tr>
+      <td>AlexNet</td>
+      <td>0.8842</td>
+      <td>0.8801</td>
+      <td>0.8803</td>
+      <td>0.9399</td>
+      <td>0.9389</td>
+      <td>0.9391</td>
+    </tr>
+    <tr>
+      <td>ViTpatch16</td>
+      <td><b>0.9342</b></td>
+      <td><b>0.9318</b></td>
+      <td><b>0.9323</b></td>
+      <td><b>0.9880</b></td>
+      <td><b>0.9879</b></td>
+      <td><b>0.9879</b></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <caption><b>Class-wise comparison of the ViT model's performance on the original and augmented datasets.<b></caption>
+  <thead>
+    <tr>
+      <th rowspan="2">Class</th>
+      <th colspan="3">Original dataset</th>
+      <th colspan="3">Augmented dataset</th>
+    </tr>
+    <tr>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-score</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Algae</td>
+      <td>0.9915</td>
+      <td>0.9516</td>
+      <td><b>0.9711</b></td>
+      <td>1.0000</td>
+      <td>0.9975</td>
+      <td><b>0.9987</b></td>
+    </tr>
+    <tr>
+      <td>Major crack</td>
+      <td>0.8761</td>
+      <td>0.8534</td>
+      <td><u>0.8646</u></td>
+      <td>0.9794</td>
+      <td>0.9550</td>
+      <td><u>0.9670</u></td>
+    </tr>
+    <tr>
+      <td>Minor crack</td>
+      <td>0.8417</td>
+      <td>0.9435</td>
+      <td>0.8897</td>
+      <td>0.9612</td>
+      <td>0.9925</td>
+      <td>0.9766</td>
+    </tr>
+    <tr>
+      <td>Peeling</td>
+      <td>0.9595</td>
+      <td>0.9134</td>
+      <td>0.9359</td>
+      <td>0.9851</td>
+      <td>0.9925</td>
+      <td>0.9887</td>
+    </tr>
+    <tr>
+      <td>Stain</td>
+      <td>0.9166</td>
+      <td>0.9519</td>
+      <td>0.9339</td>
+      <td>0.9950</td>
+      <td>0.9975</td>
+      <td><b>0.9962</b></td>
+    </tr>
+    <tr>
+      <td>Normal</td>
+      <td>1.0000</td>
+      <td>0.9916</td>
+      <td><b>0.9958</b></td>
+      <td>0.9974</td>
+      <td>0.9925</td>
+      <td>0.9949</td>
+    </tr>
+  </tbody>
+</table>
+
+## Confusion matrix
+![image](https://github.com/user-attachments/assets/320522de-6258-49a9-a688-b7e45e2b1f9f)
+
+# Code
+
+- **[Data Pre-processing](code/data-process)** - This folder contains Python scripts for renaming images, resizing, and other preprocessing functions. 
+- **[Image Augmentation](code/data-augment-Technq)** -Python code for generating augmented dataset.
+- **[Dataset Splitting](code/train-test-split)** - Python code for splitting the dataset into training, validation, and test sets.
+- **[Model Training and Evaluation](code/model-train)** - Scripts for training and evaluation of different deep learning models.
+- **[Result Analysis](code/results)** - Python scripts to analyze and visualize the results.
+
+## Directure structure
     .
-    ├── ...
-    ├── train                   # train folder
-    │   ├── cls00              
-    │   ├──   ├── cls00_001.jpg               
-    │   ├──   :                 
-    │   └── cls06              
-    └── val                     # validation folder
-    └── test                    # test folder
-    
+    ├── code                         # All Python codes
+    │   ├── data-process             # Data pre-processing code
+    │   ├── data-augment-Technq      # Image augmentation code
+    │   ├── train-test-split         # Data split code
+    │   ├── model-train              # Model training and evaluation code
+    │   └── Results                  # Results analysis
+    └── example-imgs                 # Dataset files
+        ├── ...
 
-## Preprocessing and Model Training
-
-The codebase folder [code](https://github.com/Praveenkottari/BD3-Dataset/tree/main/code) contains all the files and notebooks used for the experiments.
-
-[data-augment-technq](https://github.com/Praveenkottari/BD3-Dataset/tree/main/code/data-augment-Technq): This subfolder provides a notebook that applies several augmentation techniques to generate additional data samples.
-
-[data-process](https://github.com/Praveenkottari/BD3-Dataset/tree/main/code/data-process): This folder contains Python scripts for renaming, resizing, and other preprocessing activities.
-
-[train-test-split](https://github.com/Praveenkottari/BD3-Dataset/tree/main/code/train-test-split) : This folder includes a Python script for splitting the dataset into training and testing sets based on a custom ratio.
-
-[model-train](https://github.com/Praveenkottari/BD3-Dataset/tree/main/code/model-train): This folder is a collection of all the notebooks used for model training in this study. Each model has its own separate notebook.
-
-The notebooks and Python scripts mentioned above can be reused by cloning this repository to your local machine. You can also download the notebooks, make necessary changes to datasets, file paths, or other configurations, and use them for training and testing.
+## Citation
+TODO...
 
 ## Deep Learnign models
 
@@ -76,7 +220,6 @@ The notebooks and Python scripts mentioned above can be reused by cloning this r
 | 	:-----:	 | 	:-----:	 | 	:-----:	 | 
 | 	ViT16	| 	Transformer	| 	[paper](https://arxiv.org/abs/2010.11929)	 | 
 | 	VGG16 	| 	CNN	| 	[paper](https://arxiv.org/abs/1409.1556)	 | 
-| 	ResNet18	| 	CNN	| 	[paper](https://arxiv.org/abs/1512.03385)	 | 
+| 	ResNet18	| 	CNN	| 	 | 
 | 	Alexnet	| 	CNN	| 	[paper](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)	 | 
 | 	MobileNet-V2	| 	CNN	| 	[paper](MobileNet-V2)	 | 
-
