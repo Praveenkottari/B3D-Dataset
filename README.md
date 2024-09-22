@@ -203,8 +203,8 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
 ## Confusion matrix
 
 <p align="center">
-    <img src="example-imgs/report_images/org-vt-confu.png" alt="Original Confusion Matrix" width="500" style="margin-right: 50px;"/>
-    <img src="example-imgs/report_images/aug-vt-confu.png" alt="Augmented Confusion Matrix" width="500" style="margin-left: 50px;"/>
+    <img src="example-imgs/report_images/org-vt-confu.png" alt="Original Confusion Matrix" width="400" style="margin-right: 50px;"/>
+    <img src="example-imgs/report_images/aug-vt-confu.png" alt="Augmented Confusion Matrix" width="400" style="margin-left: 50px;"/>
 </p>
 <p align="center"><i>Figure: Vision Transformer model confusion matrices on Original and Augmented dataset.</i></p>
 
