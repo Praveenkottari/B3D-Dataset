@@ -214,7 +214,7 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
 - **[Image Augmentation](code/data-augmentation)** -Python code for generating augmented dataset.
 - **[Dataset Splitting](code/train-test-split)** - Python code for splitting the dataset into training, validation, and test sets.
 - **[Model Training and Evaluation](code/model-train)** - Scripts for training and evaluation of different deep learning models.
-- **[Result Analysis](code/output analysis)** - Python scripts to analyze and visualize the results.
+- **[Result Analysis](https://github.com/Praveenkottari/BD3-Dataset/tree/f0d4a56086431f2fc10553247f9148440d2b63d4/code/output%20analysis)** - Python scripts to analyze and visualize the results.
 
 ## Directory structure
     .
