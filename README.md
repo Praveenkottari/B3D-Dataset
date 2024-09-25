@@ -211,10 +211,10 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
 # Code
 
 - **[Data Pre-processing](code/data-process)** - This folder contains Python scripts for renaming images, resizing, and other preprocessing functions. 
-- **[Image Augmentation](code/data-augment-Technq)** -Python code for generating augmented dataset.
+- **[Image Augmentation](code/data-augmentation)** -Python code for generating augmented dataset.
 - **[Dataset Splitting](code/train-test-split)** - Python code for splitting the dataset into training, validation, and test sets.
 - **[Model Training and Evaluation](code/model-train)** - Scripts for training and evaluation of different deep learning models.
-- **[Result Analysis](code/results)** - Python scripts to analyze and visualize the results.
+- **[Result Analysis](code/output analysis)** - Python scripts to analyze and visualize the results.
 
 ## Directory structure
     .
