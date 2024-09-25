@@ -1,0 +1,6 @@
+model,precision,recall,f1-score
+ResNet18,0.8832,0.8818,0.8817
+ViTpatch16,0.988,0.9879,0.9879
+VGG16,0.9066,0.9057,0.9056
+AlexNet,0.9399,0.9389,0.9391
+MobileNetV2,0.8756,0.875,0.8746
