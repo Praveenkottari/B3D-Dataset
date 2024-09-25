@@ -224,9 +224,16 @@ To assess the utility and practical usefulness of the BD3 dataset, we benchmarke
     │   ├── train-test-split         # Data split code
     │   ├── model-train              # Model training and evaluation code
     │   └── Results                  # Results analysis
-    └── example-imgs                 # Dataset image sample files
-        ├── cls00_441.jpg
-        ├── ...
+    ├── sample images               # Dataset image sample files
+    |   ├── class_images
+    |   |    ├── Algae
+    |   |    |    ├── ...cls00_001.jpg
+    |   |    :    :          :
+    |   |    :    :
+    ├── Results
+        ├── model-wise results
+        |          :
+  
 
 ## Citation
 TODO...
